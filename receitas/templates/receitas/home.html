@@ -18,11 +18,71 @@
             <div class="flex items-cener mb-4 sm:mb-0">
                 <div class="text-4xl mr-4">
                     <i class="fas fa-utensils"></i>
-                    Alfredo Walter Regner Neto  
+                    <!-- Alfredo Walter Regner Neto   -->
                 </div>
+                <h1 class="text-4xl font-bold text-center sm:text-left">
+                    Minhas Receitas Deliciosas
+                </h1>
             </div>
+            <nav class="mt-4 sm:mt-0"></nav>
         </div>
     </header>
-    Criando minha nova página de receitas!
+    <!-- Conteúdo principal da página -->
+    <section class="container mx-auto mt-8 p-4 flex justify-center">
+        <div class="w-full max-w-lg flex bg-white rounded-full shadow-md overflow-hidden">
+            <input type="text" placeholder="Pesquisar receitas... " class="flex-grow p-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-l-full pl-5">
+            <button class="bg-orange-500 hover:bg-orange-600 text-white p-3 px-6 rounded-r-full transition durantion-300 ease-in-out flex items-center justify-center">
+                <i class="fas fa-search mr-2"></i> Pesquisar
+            </button>
+        </div>
+    </section>
+    <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
+        <!-- Título da seção de receitas -->
+        <h2 class="text-2xl font-semibold mb-4 text-center">Nossas últimas receitas</h2>
+        <!-- Container Flexível para as receitas -->
+        <div class="flex flex-wrap justify-center gap-6">
+            <!-- Receita 1 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Receita de Bolo de Chocolate</h3>
+                <p class="text-gray-600 mb-4">Um bolo clássico, úmdo e delicioso, perfeito para qualquer ocasião.</p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+            <!-- Receita 2 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Frango Assado com Ervas</h3>
+                <p class="text-gray-600 mb-4">Uma receita simples e saborosa de frango assado com um toque de ervas frescas. </p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+            <!-- Receita 3 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Salada Mediterrânea Fresca</h3>
+                <p class="text-gray-600 mb-4">Uma salada refrescante, cheia de sabores do Mediterrâneo.</p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+            <!-- Receita 4 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Torta de Limão Cremosa</h3>
+                <p class="text-gray-600 mb-4">Uma torta clássica com recheio de limão azedinho e merengue tostado.</p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+            <!-- Receita 5 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Sopa de Legumes Nutritiva</h3>
+                <p class="text-gray-600 mb-4">Uma sopa reconfortante e cheia de vegetais frescos, perfeita para dias frios.</p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+            <!-- Receita 6 -->
+            <div class="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-2 text-gray-800">Risoto de Cogumelos Selvagens</h3>
+                <p class="text-gray-600 mb-4">Um risoto cremoso e aromático, com uma mistura rica de cogumelos selvagens.</p>
+                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">Ver Receita &rarr;</a>
+            </div>
+        </div>
+        <!-- <p class="text-lg text-gray-700">Aqui você poderá organizar e compartilhar suas receitas favoritas</p>
+        <p class="mt-4 text-gray-600">Este é o início da sua jornada culinária com Django.</p> -->
+    </main>
+    <footer class="mt-12 p-6 text-center text-gray-600">
+        <p>&copy; 2025 Minhas Receitas. Todos os direitos reservados a Alfredo</p>
+    </footer>
 </body>
 </html>
