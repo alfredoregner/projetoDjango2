@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -122,7 +122,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os
 
-MEDIA_URL = 'media/'
+BASE_DIR = Path(__file__).resolve().parent.parent
+#  Configurações para arquivos de mídia (imagens, vídeos, etc. enviados por usuários)
+MEDIA_URL = 'media/' # Barra inicial é importante
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Cria uma pasta 'media' na raiz do projeto
