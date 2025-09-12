@@ -4,6 +4,7 @@
 
 <!-- Conteúdo principal da página -->
 <!-- Seção de Pesquisa -->
+
 <section class="container mx-auto mt-8 p-4 flex justify-center">
     <form method="get" action="{% url 'pesquisar_receitas' %}"
         class="w-full max-w-lg flex bg-white rounded-full shadow-md overflow-hidden">
@@ -15,6 +16,14 @@
         </button>
     </form>
 </section>
+
+<nav class="relative justify-center my-4 z-10 flex space-x-4">
+    <a href="{%url 'home'%}" class="text-white mx-2 px-4 py-2 rounded-full bg-orange-500 hover:bg-orange-600 font-semibold">Todas</a>
+    <a href="{%url 'home'%}?categoria=comida" class="text-black mx-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold">Comida</a>
+    <a href="{%url 'home'%}?categoria=sobremesa" class="text-black mx-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold">Sobremesas</a>
+    <a href="{%url 'home'%}?categoria=drink" class="text-black mx-2 px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-semibold">Drinks</a>
+</nav>
+
 <!-- <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md"> -->
 <!-- Título da seção de receitas -->
 <h2 class="text-2xl font-semibold mb-4 text-center">Nossas últimas receitas</h2>
