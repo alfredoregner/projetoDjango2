@@ -33,19 +33,16 @@
             <nav class="mr-auto relative z-10 flex space-x-4">
                 <i class="fas fa-home"><a href="{%url 'home'%}" class="text-gray-300 hover:text-white mx-2">Home</a></i>
             </nav>
+            <nav class="mr-auto relative z-10 flex space-x-4">
+                <i class="fas fa-user"><a href="{%url 'sobre_nos'%}" class="text-gray-300 hover:text-white mx-2">Sobre Nós</a></i>
+            </nav>
+            <nav class="mr-auto relative z-10 flex space-x-4">
+                <i class="fas fa-envelope"><a href="{%url 'contato'%}" class="text-gray-300 hover:text-white mx-2">Contato</a></i>
+            </nav>
         </div>
     </header>
 
     <main class="container mx-auto p-6 mt-8 bg-white rounded-lg shadow-md">
-        <!-- <nav class="relative z-10 flex justify-center space-x-4">
-            <a href="{%url 'home'%}" class="bg-orange-500 hover:bg-orange-600 text-white p-4 px-6 rounded-full transition duration-300 ease-in-out flex items-center justify-center">Todas</a>
-            <a href="{%url 'home'%}?categoria=comida" class="bg-gray-300 hover:bg-gray-400 text-black p-4 px-6 rounded-full transition duration-300 ease-in-out flex items-center justify-center">Comida</a>
-            <a href="{%url 'home'%}?categoria=sobremesa" class="bg-gray-300 hover:bg-gray-400 text-black p-4 px-6 rounded-full transition duration-300 ease-in-out flex items-center justify-center">Sobremesas</a>
-            <a href="{%url 'home'%}?categoria=drink" class="bg-gray-300 hover:bg-gray-400 text-black p-4 px-6 rounded-full transition duration-300 ease-in-out flex items-center justify-center">Drinks</a>
-            <a href="{%url 'home'%}?categoria=comida" class="text-black-300 hover:text-orange-600 mx-2">Comida</a>
-            <a href="{%url 'home'%}?categoria=sobremesa" class="text-black-300 hover:text-orange-600 mx-2">Sobremesas</a>
-            <a href="{%url 'home'%}?categoria=drink" class="text-black-300 hover:text-orange-600 mx-2">Drinks</a>
-        </nav> -->
         {% block content %}{% endblock %}
     </main>
 
