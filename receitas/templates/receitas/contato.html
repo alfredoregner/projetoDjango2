@@ -10,21 +10,21 @@
             <div>
                 <label for="{{ form.nome.id_for_label }}" class="block text-sm font-medium text-gray-400">Nome</label>
                 {{ form.nome }}
-                {% if form.nome.erros %}
+                {% if form.nome.errors %}
                     <p class="text-red-500 text-xs italic"> {{ form.nome.errors }}</p>
                 {% endif %}
             </div>
             <div>
                 <label for="{{ form.email.id_for_label }}" class="block text-sm font-medium text-gray-400">Email</label>
                 {{ form.email }}
-                {% if form.email.erros %}
-                    <p class="text-red-500 text-xs italic"> {{ form.email.errors }}</p>
+                {% if form.email.errors %}
+                    <p class="text-white-500 text-xs italic"> {{ form.email.errors }}</p>
                 {% endif %}
             </div>
             <div>
                 <label for="{{ form.mensagem.id_for_label }}" class="block text-sm font-medium text-gray-400">Mensagem</label>
                 {{ form.mensagem }}
-                {% if form.mensagem.erros %}
+                {% if form.mensagem.errors %}
                     <p class="text-red-500 text-xs italic"> {{ form.mensagem.errors }}</p>
                 {% endif %}
             </div>

@@ -3,7 +3,7 @@ from django import forms
 class ContatoForm(forms.Form):
     nome = forms.CharField(
         label='Nome',
-        max_lenght = 100,
+        max_length = 100,
         widget = forms.TextInput(attrs={
             'class': 'mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100 focus:ring-orange-500 focus:border-orange-500', 
             'placeholder':'Seu nome'

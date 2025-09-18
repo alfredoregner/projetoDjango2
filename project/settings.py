@@ -127,3 +127,5 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #  Configurações para arquivos de mídia (imagens, vídeos, etc. enviados por usuários)
 MEDIA_URL = 'media/' # Barra inicial é importante
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Cria uma pasta 'media' na raiz do projeto
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = BASE_DIR/'emails'
